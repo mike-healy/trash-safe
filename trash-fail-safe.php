@@ -3,10 +3,11 @@
  * Description: Require confirmation before deleting items from the Trash, or emptying the whole trash. Protects against accidental clicks.
  * Plugin Name: Trash Fail Safe
  * Plugin URI: https://www.mikehealy.com.au/plugins/wp-trash-fail-safe 
- * Version: 0.2
+ * Version: 0.9
  * Author: Mike Healy
  * Author URI: https://www.mikehealy.com.au
  * Requires PHP: 5.3
+ * Requires at least: 5.2
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,6 +26,6 @@ add_action('admin_enqueue_scripts', function() {
 
     $script_handle = 'trash-fail-safe';
 
-    wp_register_script($script_handle, plugin_dir_url(__FILE__) . 'failsafe.js', null, '0.2', true);
+    wp_register_script($script_handle, plugins_url('failsafe.js', __FILE__), null, '0.9', true);
     wp_enqueue_script($script_handle);
 });
