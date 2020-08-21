@@ -18,7 +18,10 @@
             return;
         }
 
-        if (!ev.target.matches('a.submitdelete') || !ev.target.parentElement.matches('span.delete')) {
+        //Media list has native confirmation, so we don't need to double up on it.
+        const isMediaListTable = jQuery(ev.target).closest('table.media').length === 1;
+
+        if (!ev.target.matches('a.submitdelete') || !ev.target.parentElement.matches('span.delete') || isMediaListTable) {
             return;
         }
 
