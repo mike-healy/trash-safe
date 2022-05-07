@@ -11,7 +11,8 @@
 
     //Media list has native confirmation, so we don't need to double up on it.
     function isMediaListTable(eventTarget) {
-        return jQuery(eventTarget).closest('table.media').length === 1;
+        return jQuery(eventTarget).closest('table.media').length === 1
+        || jQuery(eventTarget).find('table.media').length === 1;
     }
 
     //Allow normal click handling for elements other than span.delete a.submitdelete
@@ -43,7 +44,7 @@
             return;
         }
         
-        if (!confirm('SCOOBY Are you sure you want to permanently delete all selected items?')) {
+        if (!confirm('Are you sure you want to permanently delete all selected items?')) {
             ev.preventDefault();
         }
     });
