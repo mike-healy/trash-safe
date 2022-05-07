@@ -4,7 +4,7 @@ Tags: admin,failsafe,confirmation,trash,trashed,posts
 Requires at least: 4.7
 Tested up to: 6.0
 Requires PHP: 5.3
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2
 
 Require confirmation before deleting items from the Trash, or emptying the whole Trash. Protects against accidental clicks.
