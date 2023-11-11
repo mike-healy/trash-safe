@@ -2,7 +2,7 @@
 Contributors: mikehealy
 Tags: admin,failsafe,confirmation,trash,trashed,posts
 Requires at least: 4.7
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 5.3
 Stable tag: 1.2.0
 License: GPLv2
