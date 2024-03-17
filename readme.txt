@@ -2,7 +2,7 @@
 Contributors: mikehealy
 Tags: admin,failsafe,confirmation,trash,trashed,posts
 Requires at least: 4.7
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 5.3
 Stable tag: 1.2.0
 License: GPLv2
@@ -14,11 +14,8 @@ If you use the WordPress admin area on a mobile device, or have cats sometimes w
 This plugin adds simple JS to the admin area to do just that.
 
 == Changelog ==
-1.2.0 - 2023-04-07
-Tested on WordPress 6.2
-
 1.2.0 - 2022-05-07
-Tested on WordPress 6.0 and avoid double confirmation when deleting media library item
+Avoid double confirmation when deleting media library item
 
 1.1.0 - 2022-03-12
 Require confirmation before bulk deleting posts from trash using Bulk Actions
