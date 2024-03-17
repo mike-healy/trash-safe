@@ -23,7 +23,6 @@
 defined( 'ABSPATH' ) || exit();
 
 add_action('admin_enqueue_scripts', function() {
-
     $script_handle = 'trash-fail-safe';
 
     wp_register_script($script_handle, plugins_url('failsafe.js', __FILE__), null, '1.2.0', true);
